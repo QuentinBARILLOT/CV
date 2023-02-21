@@ -1,17 +1,16 @@
 ---
-name: Bryan
-surname: Jenks
-position: "Information Technology Associate"
-address: "Covered California"
+name: Quentin
+surname: Facon-Barillot
+position: "Doctorant en psychologie clinique"
+address: "Université Paris Nanterre"
 profilepic: "./img/me.jpg"
-www: "bryanjenks.dev"
-email: "bryan@bryanjenks.dev"
-github: tallguyjenks
-linkedin: bryanjenks
-orcid: 0000-0002-9604-3069
+email: "qbarillot@parisnanterre.fr"
+github: QuentinBARILLOT
+linkedin: quentin-barillot
+orcid: 0000-0002-9469-3623
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: 990000
-aboutme: "I have been writing production software in a variety of languages for over 5 years for various California State Government Agencies. I have a deep driven passion for software, automation, and data Engineering. This very CV was even compiled with code."
+headcolor: '0a51cd'
+aboutme: "Psychologue clinicien et psychothérapeute, j'effectue depuis plus d'un an mon doctorat en psychologie clinique sur la santé mentale des étudiants sous la direction de Lucia Romo et Yannick Morvan. J'effectue également des consultations bénévoles auprès de la Fondation Santé des Étudiants de France à Paris (FSEF)."
 docname: CV
 output: vitae::awesomecv
 ---
@@ -37,7 +36,7 @@ source(file = here("r","data.r"))
 
 ```
 
-# Employment
+# Professional experience
 
 ```{r EMPLOYMENT}
 
@@ -54,9 +53,11 @@ work %>%
 
 # Education
 
-```{r EDUCATION}
+## Formation
 
-edu %>%
+```{r EDUCATION1}
+
+edu1 %>%
   detailed_entries(
     with = inst,
     what = degree,
@@ -67,23 +68,33 @@ edu %>%
 
 ```
 
-# Skills
+## Universitaire
 
-```{r SKILLS}
+```{r EDUCATION2}
 
-skills %>%
+edu2 %>%
   detailed_entries(
-    with = area,
-    what = skills
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where
   )
 
 ```
 
-# Honors
+# Publications
 
-```{r HONORS}
+```{r PUBLICATIONS}
 
-honors %>%
+bibliography_entries("Publications.bib")
+```
+
+# Internships
+
+```{r INTERNESHIPS}
+
+intern %>%
   detailed_entries(
     with = area,
     what = accomplishment,
@@ -94,11 +105,11 @@ honors %>%
 
 ```
 
-# Projects
+# Conferences
 
-```{r PROJECTS}
+```{r CONFERENCES}
 
-projects %>%
+conf %>%
   detailed_entries(
     with = area,
     what = accomplishment,
@@ -109,11 +120,11 @@ projects %>%
 
 ```
 
-# Works
+# Administrative responsabilitites
 
-```{r WORKS}
+```{r ADMINISTRATIVE}
 
-works %>%
+adm %>%
   detailed_entries(
     with = area,
     what = accomplishment,
@@ -124,13 +135,26 @@ works %>%
 
 ```
 
-\pagebreak
+# Research skills
 
-# Certifications
+```{r RSKILLS}
 
-```{r CERTIFICATIONS}
+rs %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
 
-certifications %>%
+```
+
+# Psychotherapeutic skills
+
+```{r PSKILLS}
+
+ps %>%
   detailed_entries(
     with = area,
     what = accomplishment,
