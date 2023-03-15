@@ -1,7 +1,7 @@
 ---
 name: Quentin
 surname: Facon-Barillot
-position: "Doctorant en psychologie clinique"
+position: "PHD student in clinical psychologie"
 address: "Maisons Laffitte, France"
 profilepic: "./img/me.jpg"
 email: "qbarillot@parisnanterre.fr"
@@ -10,7 +10,7 @@ linkedin: quentin-barillot
 orcid: 0000-0002-9469-3623
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: '0a51cd'
-aboutme: "Psychologue clinicien et psychothérapeute, je travaille depuis plus d'un an sur un doctorat en psychologie clinique sur la santé mentale des étudiants sous la direction de Lucia Romo et de Yannick Morvan. Je réalise également des consultations bénévoles au sein de la Fondation Santé des Étudiants de France à Paris (FSEF)."
+aboutme: "Clinical psychologist and psychotherapist, I have been working for more than a year on a PHD in clinical psychology on student mental health under the supervision of Lucia Romo and Yannick Morvan. I also carry out voluntary consultations for the Fondation Santé des Étudiants de France in Paris (FSEF)."
 docname: CV
 output: vitae::awesomecv
 ---
@@ -33,11 +33,11 @@ packages <- c('vitae'     # The CV's LaTeX Template
 
 xfun::pkg_attach2(packages, message = FALSE)
 
-source(file = here("r","data_fr.r"))
+source(file = here("r","data_eng.r"))
 
 ```
 
-# Expériences professionnelles
+# Professional experiences
 
 ```{r EMPLOYMENT}
 
@@ -54,7 +54,7 @@ work %>%
 
 # Qualifications
 
-## Formations
+## Training
 
 ```{r EDUCATION1}
 
@@ -69,7 +69,7 @@ edu1 %>%
 
 ```
 
-## Cursus universitaire
+## Diplomas
 
 ```{r EDUCATION2}
 
@@ -91,7 +91,7 @@ edu2 %>%
 bibliography_entries("Publications.bib")
 ```
 
-# Stages
+# Interships
 
 ```{r INTERNESHIPS}
 
@@ -106,9 +106,9 @@ intern %>%
 
 ```
 
-# Congrès
+# Congress
 
-## Communications orales
+## Oral communications
 
 ```{r CONFERENCES1}
 
@@ -122,7 +122,7 @@ conf1 %>%
 
 ```
 
-## Posters
+## Displayed communications
 
 ```{r CONFERENCES2}
 
@@ -138,7 +138,7 @@ conf2 %>%
 
 \pagebreak
 
-# Responsabilités administratives
+# Administrative duties
 
 ```{r ADMINISTRATIVE}
 
@@ -152,7 +152,7 @@ adm %>%
 
 ```
 
-# Activités bénévoles
+# Volunteering
 
 ```{r BENEVOLAT}
 
@@ -167,7 +167,7 @@ cha %>%
 
 ```
 
-# Compétences 
+# Skills 
 
 ```{r COMPETENCES}
 
