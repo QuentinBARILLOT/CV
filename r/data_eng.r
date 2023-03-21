@@ -1,36 +1,36 @@
 work <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
-    "Teaching activities : second year degree students", "Paris Nanterre University", "January", 2023, "Present", NA, "Nanterre", "TD Pathoclinique TCC - Psychotherapies : Theory and practices",
-    "Teaching activities : second year degree students", "Paris Nanterre University", "January", 2023, "Present", NA, "Nanterre", "Development of different psychotherapeutic approaches : psychoanalysis, Human therapy, systemical therapy et CBT",
-    "Teaching activities : master's degree students", "Paris Nanterre University", "September", 2022, "Present", NA, "Nanterre", "TD Empirical masters of CBT : Research seminar",
+    "Teaching activities : second year undergraduate students", "Paris Nanterre University", "January", 2023, "Present", NA, "Nanterre", "Psychotherapies : Theory and practices",
+    "Teaching activities : second year undergraduate students", "Paris Nanterre University", "January", 2023, "Present", NA, "Nanterre", "Development of different psychotherapeutic approaches : psychoanalysis, Human therapy, systemic therapy et CBT",
+    "Teaching activities : master's degree students", "Paris Nanterre University", "September", 2022, "Present", NA, "Nanterre", "Research seminar",
     "Teaching activities : master's degree students", "Paris Nanterre University", "September", 2022, "Present", NA, "Nanterre", "Supporting students in the conceptualisation and writing of their research paper",
-    "Teaching activities : third year degree students", "Paris Nanterre University", "January", 2022, "May", 2022, "Nanterre", "TD CBT specialty : Personality disorders and addictive disorders",
-    "Teaching activities : third year degree students", "Paris Nanterre University", "January", 2022, "May", 2022, "Nanterre", "TD CBT specialty : Research paper training",
-    "Doctoral contract", "Paris Nanterre University", "September", 2021, "Present", NA, "Nanterre", "Three years grant with the 139 Doctoral School",
-    "Teaching activities", "Croix-Rouge Française", "June", 2021, "August", 2021, "Montrouge", "Teaching on the communication module of the paramedic training",
-    "Psychological assistant", "Medical residence of la Lendemaine", "May", 2019, "July", 2019, "Les Molières", "Psychological assistant for autistics adults"
+    "Teaching activities : third year undergraduate students", "Paris Nanterre University", "January", 2022, "May", 2022, "Nanterre", "CBT specialty class : Personality disorders and addictive disorders",
+    "Teaching activities : third year undergraduate students", "Paris Nanterre University", "January", 2022, "May", 2022, "Nanterre", "CBT specialty class : Research paper training",
+    "Doctoral contract", "Paris Nanterre University", "September", 2021, "Present", NA, "Nanterre", "Three year grant allocated by the 139 Doctoral School",
+    "Teaching activities", "Croix-Rouge Française", "June", 2021, "August", 2021, "Montrouge", "Communication module for paramedic training",
+    "Psychological assistant", "Medical residence of la Lendemaine", "May", 2019, "July", 2019, "Les Molières", "Psychological assistant for autistic adults in permanent residence"
 )
 
 edu1 <- tribble(
     ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
-    "Psychological flexibility website", 2021, "2021", "Acceptance and commitment therapy training", "Online", "2 days training led by Jean Louis Monestès, module : Débuter la pratique de l'ACT",
-    "Association Française de Thérapie Cognitive et Comportementales", 2021, "Present", "Cognitive Behavioral Therapy training", "Paris", "Advanced traning to Cognitive Behabioral Therapy"
+    "Psychological flexibility website", 2021, "2021", "Acceptance and commitment therapy training", "Online", "2 day training led by Jean Louis Monestès : Begin the ACT approach",
+    "Association Française de Thérapie Cognitive et Comportementales", 2021, "Present", "Cognitive Behavioral Therapy training", "Paris", "Advanced traning in Cognitive Behavioral Therapy"
 )
 
 edu2 <- tribble(
     ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
-    "Paris Nanterre University", 2021, "Present", "PHD in clinical psychology", "Nanterre", "PHD with the 139 Doctoral School (Knowledge, language, modelling), in the Clipsyd research laboratory",
-    "Paris Nanterre University", 2021, "Present", "PHD in clinical psychology", "Nanterre", "Thesis title : A modelization approach to students mental health : from epidemiological data to psychological interventions",
+    "Paris Nanterre University", 2021, "Present", "PHD in clinical psychology", "Nanterre", "PHD affiliated with the 139 Doctoral School (Knowledge, language, modelling), in the Clipsyd research laboratory",
+    "Paris Nanterre University", 2021, "Present", "PHD in clinical psychology", "Nanterre", "Thesis title : A modelization approach to students' mental health : from epidemiological data to psychological interventions",
     "Paris Nanterre University", 2019, "2021", "Master’s degree in clinical and empirical psychology", "Nanterre", "Magna cum laude", 
     "Paris Nanterre University", 2019, "2021", "Master’s degree in clinical and empirical psychology", "Nanterre", "Masters dissertation on network analysis of socio-demographic and temperamental variables in relation to the intensity of subjective effects experienced during first-time cannabis use.",
-    "Paris Nanterre University", 2016, "2019", "3 year degree in psychology", "Nanterre", "CBT specialty"
+    "Paris Nanterre University", 2016, "2019", "3 year undergraduate degree in psychology", "Nanterre", "CBT specialty"
 )
 
 intern <- tribble(
     ~title, ~unit, ~startMonth, ~startYear, ~endMonth, ~endYear, ~where, ~detail,
     "Addiction center", "CSAPA APS Contact", "September", 2020, "July", 2021, "Provins", "Individual and joint patient care",
     "Medical center for the elderly", "Résidence de l'empereur", "January", 2020, "June", 2020, "Garches", "Individual patient care, management of memory working groups, psychological assessments",
-    "Medical residence", "La lendemaine", "May", 2019, "April", 2019, "Les Molières", "Third year intership within a medical residence for autistic adults"
+    "Medical residence", "La lendemaine", "May", 2019, "April", 2019, "Les Molières", "Third year internship within a medical residence for autistic adults"
 )
 
 conf1 <- tribble(
@@ -49,15 +49,15 @@ conf2 <- tribble(
 
 cha <- tribble(
     ~activities, ~unit, ~year, ~where, ~detail,
-    "Clinical activity", "Fondation Santé des Étudiants de France", "Actual", "Paris", "Work in progress",
-    "Psychotherapeutic consultation", "Croix-Rouge Française", "2022", "Remote interview", "Care of students in nursing schools"
+    "Clinical activity", "Fondation Santé des Étudiants de France", "Current", "Paris", "Individual psychotherapy for students",
+    "Psychotherapeutic consultation", "Croix-Rouge Française", "2022", "Remote interview", "Individual psychotherapy of students in nursing schools"
 )
 
 adm <- tribble(
     ~title, ~precision, ~year, ~where,
-    "École doctorale 139", "Substitute for doctoral student representatives", "Actual", "Nanterre",
-    "Clipsyd laboratory", "Titular representative of the doctoral students in the Evaclipsy team", "Actual", "Nanterre",
-    "EPNR Platform", "Titular representative of the doctoral students' room", "Actual", "Nanterre"
+    "École doctorale 139", "Substitute for doctoral student representatives", "Current", "Nanterre",
+    "Clipsyd laboratory", "Statutory representative of the doctoral students in the Evaclipsy team", "Current", "Nanterre",
+    "EPNR Platform", "Statutory representative of the doctoral students' room", "Current", "Nanterre"
 )
 
 comp <- tribble(

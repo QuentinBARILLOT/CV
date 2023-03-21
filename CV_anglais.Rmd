@@ -1,7 +1,7 @@
 ---
 name: Quentin
 surname: Facon-Barillot
-position: "PHD student in clinical psychologie"
+position: "PHD student in clinical psychology"
 address: "Maisons Laffitte, France"
 profilepic: "./img/me.jpg"
 email: "qbarillot@parisnanterre.fr"
@@ -10,7 +10,7 @@ linkedin: quentin-barillot
 orcid: 0000-0002-9469-3623
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: '0a51cd'
-aboutme: "Clinical psychologist and psychotherapist, I have been working for more than a year on a PHD in clinical psychology on student mental health under the supervision of Lucia Romo and Yannick Morvan. I also carry out voluntary consultations for the Fondation Santé des Étudiants de France in Paris (FSEF)."
+aboutme: "As a clinical psychologist and psychotherapist, I have been working for more than a year on a PHD in clinical psychology on student mental health under the supervision of Lucia Romo and Yannick Morvan. I also carry out voluntary consultations for the Fondation Santé des Étudiants de France in Paris (FSEF)."
 docname: CV
 output: vitae::awesomecv
 ---
@@ -91,7 +91,7 @@ edu2 %>%
 bibliography_entries("Publications.bib")
 ```
 
-# Interships
+# Internships
 
 ```{r INTERNESHIPS}
 
@@ -122,7 +122,7 @@ conf1 %>%
 
 ```
 
-## Displayed communications
+## Poster sessions
 
 ```{r CONFERENCES2}
 
