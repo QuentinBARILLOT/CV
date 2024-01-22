@@ -4,21 +4,19 @@ surname: Facon-Barillot
 position: "Doctorant en psychologie clinique"
 address: "Maisons Laffitte, France"
 profilepic: "./img/me.jpg"
-email: "qbarillot@parisnanterre.fr"
+email: "quentin.d.barillot@gmail.com"
 github: QuentinBARILLOT
 linkedin: quentin-barillot
 orcid: 0000-0002-9469-3623
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: '0a51cd'
-aboutme: "Psychologue clinicien et psychothérapeute, je travaille depuis plus d'un an sur un doctorat en psychologie clinique sur la santé mentale des étudiants sous la direction de Lucia Romo et de Yannick Morvan. Je réalise également des consultations bénévoles au sein de la Fondation Santé des Étudiants de France à Paris (FSEF)."
+aboutme: "Psychologue clinicien et psychothérapeute, je travaille depuis plus de deux ans sur mon doctorat en psychologie clinique sur la santé mentale des étudiants sous la direction de Lucia Romo et de Yannick Morvan."
 docname: CV
 output: vitae::awesomecv
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE,
-                      warning = FALSE,
-                      message = FALSE)
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 require(xfun)
 
@@ -33,15 +31,17 @@ packages <- c('vitae'     # The CV's LaTeX Template
 
 xfun::pkg_attach2(packages, message = FALSE)
 
-source(file = here("r","data_fr.r"))
+source(file = "./r/data.R", encoding = "UTF-8")
 
 ```
 
 # Expériences professionnelles
 
-```{r EMPLOYMENT}
+## Clinique
 
-work %>%
+```{r clinique}
+
+exp_cli %>%
   detailed_entries(
     with = title,
     what = unit,
@@ -52,13 +52,57 @@ work %>%
 
 ```
 
-# Qualifications
+## Autres
 
-## Formations
+```{r autre}
+
+exp_oth %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = where,
+    where = glue::glue("{startMonth} {startYear} → {endMonth} {endYear}",.na = "")
+  )
+
+```
+
+# Enseignements
+
+```{r ens}
+
+ens %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = where,
+    where = when
+  )
+
+```
+
+\newpage
+# Cursus universitaire
+
+```{r cursus}
+
+cursus %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = where,
+    where = glue::glue("{startYear} → {endYear}",.na = "")
+  )
+
+```
+
+# Formations
 
 ```{r EDUCATION1}
 
-edu1 %>%
+formation %>%
   detailed_entries(
     with = inst,
     what = degree,
@@ -69,76 +113,57 @@ edu1 %>%
 
 ```
 
-## Cursus universitaire
+# Publications et communications
 
-```{r EDUCATION2}
+## Chapitres d'ouvrages
 
-edu2 %>%
-  detailed_entries(
-    with = inst,
-    what = degree,
-    why = detail,
-    when = where,
-    where = glue::glue("{startYear} → {endYear}",.na = "")
-  )
+```{r chapters}
 
+bibliography_entries("./Publications.bib")
 ```
 
-# Publications
+## Communication orales
 
-```{r PUBLICATIONS}
+```{r oral_com}
 
-bibliography_entries("Publications.bib")
-```
-
-# Stages
-
-```{r INTERNESHIPS}
-
-intern %>%
-  detailed_entries(
-    with = title,
-    what = unit,
-    why = detail,
-    when = where,
-    where = glue::glue("{startMonth} {startYear} → {endMonth} {endYear}",.na = "")
-  )
-
-```
-
-# Congrès
-
-## Communications orales
-
-```{r CONFERENCES1}
-
-conf1 %>%
-  detailed_entries(
-    with = congress,
-    what = presentation,
-    where = where,
-    when = when
-  )
-
+bibliography_entries("./présentation orale.bib")
 ```
 
 ## Posters
 
-```{r CONFERENCES2}
+```{r posters}
 
-conf2 %>%
+bibliography_entries("./Posters.bib")
+
+```
+
+\newpage
+# Congrés
+
+```{r}
+
+conf %>%
   detailed_entries(
     with = congress,
-    what = presentation,
-    where = where,
-    when = when
+    where = where
   )
 
 ```
 
-\pagebreak
+# Adhésion et allocations
 
-# Responsabilités administratives
+```{r membership}
+
+membership %>%
+  detailed_entries(
+    with = activities,
+    what = unit,
+    where = year
+  )
+
+```
+
+# Responsabilités admistratives
 
 ```{r ADMINISTRATIVE}
 
@@ -152,22 +177,7 @@ adm %>%
 
 ```
 
-# Activités bénévoles
-
-```{r BENEVOLAT}
-
-cha %>%
-  detailed_entries(
-    with = unit,
-    what = activities,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
-
-# Compétences 
+# Compétences
 
 ```{r COMPETENCES}
 

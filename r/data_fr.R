@@ -4,8 +4,8 @@ work <- tribble(
     "Vacataire cours niveau L2", "Université Paris Nanterre", "Janvier", 2023, "Présent", NA, "Nanterre", "Développement des différentes approches psychothérapeutiques : psychanalyse, humanisme, systémie et TCC",
     "Vacataire cours niveau M1-M2 ", "Université Paris Nanterre", "Septembre", 2022, "Présent", NA, "Nanterre", "TD Master empirique et TCC : Réaliser une note de recherche",
     "Vacataire cours niveau M1-M2 ", "Université Paris Nanterre", "Septembre", 2022, "Présent", NA, "Nanterre", "Accompagnement des étudiants dans la conceptualisation et rédaction de leur mémoire de recherche",
-    "Vacataire cours niveau L3", "Université Paris Nanterre", "Janvier", 2022, "Mai", 2022, "Nanterre", "TD Spécialité TCC : Troubles de la personnalité et troubles addictifs",
-    "Vacataire cours niveau L3", "Université Paris Nanterre", "Janvier", 2022, "Mai", 2022, "Nanterre", "TD Spécialité TCC : TER en psychopathologie clinique empirique et TCC",
+    "Vacataire cours niveau L3", "Université Paris Nanterre", "Janvier", 2022, "Présent", NA, "Nanterre", "TD Spécialité TCC : Troubles de la personnalité et troubles addictifs (2022)",
+    "Vacataire cours niveau L3", "Université Paris Nanterre", "Janvier", 2022, "Présent", NA, "Nanterre", "TD Spécialité TCC : TER en psychopathologie clinique empirique et TCC (2022 & 2024)",
     "Contrat doctorale", "Université Paris Nanterre", "Septembre", 2021, "Présent", NA, "Nanterre", "Bourse doctorale au sein de l'école doctorale 139 pour 3 ans",
     "Vacation enseignement", "Croix-Rouge Française", "Juin", 2021, "Août", 2021, "Montrouge", "Enseignement sur le module communication de la formation d'ambulancier",
     "Vacation AMP", "FAM de la Lendemaine", "Mai", 2019, "Juillet", 2019, "Les Molières", "Aide médicaux psychologique pour personnes adultes atteintes de troubles du spectre autistique",
@@ -15,7 +15,7 @@ work <- tribble(
 edu1 <- tribble(
     ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
     "Site flexibilité psychologique", 2021, "2021", "Formation Thérapie d'acceptation et d'engagement", "En ligne", "Formation de deux jours animée par Jean Louis Monestès, module : 'Débuter la pratique de l'ACT'",
-    "Association Française de Thérapie Cognitive et Comportementales", 2021, "Présent", "Formation Thérapies Cognitives et Comportementales", "Paris", "Formation aux pratique avancées des thérapies cognitives et comportementales"
+    "Association Française de Thérapie Cognitive et Comportementales", 2021, "2023", "Formation Thérapies Cognitives et Comportementales", "Paris", "Formation aux pratique avancées des thérapies cognitives et comportementales"
 )
 
 edu2 <- tribble(
@@ -38,7 +38,7 @@ intern <- tribble(
 conf1 <- tribble(
     ~congress, ~presentation, ~where, ~when,
     "Encéphale 2023", "Santé mentale et recours aux soins : évolution depuis 2016", "Paris, France", "Janvier",
-    "Clipsyd Seminar 2023", "Communication orale : Identifier les cibles d’interventions de la détresse psychologique des étudiants en 2021", "Nanterre, France", "Janvier",
+    "Séminaire Clipsyd 2023", "Communication orale : Identifier les cibles d’interventions de la détresse psychologique des étudiants en 2021", "Nanterre, France", "Janvier",
     "AFTCC 2022", "Identifier les cibles d’interventions de la détresse psychologique des étudiants en 2021", "Paris, France", "Décembre"
 )
 
@@ -51,7 +51,7 @@ conf2 <- tribble(
 
 cha <- tribble(
     ~activities, ~unit, ~year, ~where, ~detail,
-    "Activité clinique", "Fondation Santé des Étudiants de France", "Actuel", "Paris", "WIP",
+    "Activité clinique", "Fondation Santé des Étudiants de France", "2023", "Paris", "Prise en charge d'étudiants·e·s lycéen·ne ou en études supérieures",
     "Consultations psychologiques", "Croix-Rouge Française", "2022", "Téléconsultation", "Prise en charge d'étudiant·e·s en institut de formation de soins infirmiers"
 )
 

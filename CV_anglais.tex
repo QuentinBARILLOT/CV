@@ -1,0 +1,323 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt,a4paper,]{awesome-cv}
+
+% Configure page margins with geometry
+\usepackage{geometry}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{0a51cd}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\photo{./img/me.jpg}
+\name{Quentin}{Facon-Barillot}
+
+\position{PHD student in clinical psychology}
+\address{Maisons Laffitte, France}
+
+\email{\href{mailto:qbarillot@parisnanterre.fr}{\nolinkurl{qbarillot@parisnanterre.fr}}}
+\orcid{0000-0002-9469-3623}
+\github{QuentinBARILLOT}
+\linkedin{quentin-barillot}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+\quote{As a clinical psychologist and psychotherapist, I have been
+working for more than a year on a PHD in clinical psychology on student
+mental health under the supervision of Lucia Romo and Yannick Morvan. I
+also carry out voluntary consultations for the Fondation Santé des
+Étudiants de France in Paris (FSEF).}
+
+\usepackage{booktabs}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+
+% Pandoc CSL macros
+% definitions for citeproc citations
+\NewDocumentCommand\citeproctext{}{}
+\NewDocumentCommand\citeproc{mm}{%
+  \begingroup\def\citeproctext{#2}\cite{#1}\endgroup}
+\makeatletter
+ % allow citations to break across lines
+ \let\@cite@ofmt\@firstofone
+ % avoid brackets around text for \cite:
+ \def\@biblabel#1{}
+ \def\@cite#1#2{{#1\if@tempswa , #2\fi}}
+\makeatother
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2] % #1 hanging-indent, #2 entry-spacing
+ {\begin{list}{}{%
+  \setlength{\itemindent}{0pt}
+  \setlength{\leftmargin}{0pt}
+  \setlength{\parsep}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+   \setlength{\leftmargin}{\cslhangindent}
+   \setlength{\itemindent}{-1\cslhangindent}
+  \fi
+  % set entry spacing
+  \setlength{\itemsep}{#2\baselineskip}}}
+ {\end{list}}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{\hfill\break\parbox[t]{\linewidth}{\strut\ignorespaces#1\strut}}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{\strut#1\strut}}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {janvier 2024}
+    {Quentin Facon-Barillot~~~·~~~CV}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{professional-experiences}{%
+\section{Professional experiences}\label{professional-experiences}}
+
+\begin{cventries}
+    \cventry{Paris Nanterre University}{Teaching activities : second year undergraduate students}{January 2023 → Present }{Nanterre}{\begin{cvitems}
+\item Psychotherapies : Theory and practices
+\item Development of different psychotherapeutic approaches : psychoanalysis, Human therapy, systemic therapy et CBT
+\end{cvitems}}
+    \cventry{Paris Nanterre University}{Teaching activities : master's degree students}{September 2022 → Present }{Nanterre}{\begin{cvitems}
+\item Research seminar
+\item Supporting students in the conceptualisation and writing of their research paper
+\end{cvitems}}
+    \cventry{Paris Nanterre University}{Teaching activities : third year undergraduate students}{January 2022 → May 2022}{Nanterre}{\begin{cvitems}
+\item CBT specialty class : Personality disorders and addictive disorders
+\item CBT specialty class : Research paper training
+\end{cvitems}}
+    \cventry{Paris Nanterre University}{Doctoral contract}{September 2021 → Present }{Nanterre}{\begin{cvitems}
+\item Three year grant allocated by the 139 Doctoral School
+\end{cvitems}}
+    \cventry{Croix-Rouge Française}{Teaching activities}{June 2021 → August 2021}{Montrouge}{\begin{cvitems}
+\item Communication module for paramedic training
+\end{cvitems}}
+    \cventry{Medical residence of la Lendemaine}{Psychological assistant}{May 2019 → July 2019}{Les Molières}{\begin{cvitems}
+\item Psychological assistant for autistic adults in permanent residence
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{qualifications}{%
+\section{Qualifications}\label{qualifications}}
+
+\hypertarget{training}{%
+\subsection{Training}\label{training}}
+
+\begin{cventries}
+    \cventry{Psychological flexibility website}{Acceptance and commitment therapy training}{2021 → 2021}{Online}{\begin{cvitems}
+\item 2 day training led by Jean Louis Monestès : Begin the ACT approach
+\end{cvitems}}
+    \cventry{Association Française de Thérapie Cognitive et Comportementales}{Cognitive Behavioral Therapy training}{2021 → Present}{Paris}{\begin{cvitems}
+\item Advanced traning in Cognitive Behavioral Therapy
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{diplomas}{%
+\subsection{Diplomas}\label{diplomas}}
+
+\begin{cventries}
+    \cventry{Paris Nanterre University}{PHD in clinical psychology}{2021 → Present}{Nanterre}{\begin{cvitems}
+\item PHD affiliated with the 139 Doctoral School (Knowledge, language, modelling), in the Clipsyd research laboratory
+\item Thesis title : A modelization approach to students' mental health : from epidemiological data to psychological interventions
+\end{cvitems}}
+    \cventry{Paris Nanterre University}{Master’s degree in clinical and empirical psychology}{2019 → 2021}{Nanterre}{\begin{cvitems}
+\item Magna cum laude
+\item Masters dissertation on network analysis of socio-demographic and temperamental variables in relation to the intensity of subjective effects experienced during first-time cannabis use.
+\end{cvitems}}
+    \cventry{Paris Nanterre University}{3 year undergraduate degree in psychology}{2016 → 2019}{Nanterre}{\begin{cvitems}
+\item CBT specialty
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{publications}{%
+\section{Publications}\label{publications}}
+
+\hypertarget{refs-d2ea89843c453d65022ea2f9d482217a}{}
+\begin{CSLReferences}{0}{0}
+\leavevmode\vadjust pre{\hypertarget{ref-facon-barillot_sante_2023}{}}%
+\CSLLeftMargin{1. }%
+\CSLRightInline{Facon-Barillot, Q., Romo, L., Vansimaeys, C., Chevance,
+A., Frajerman, A., \& Morvan, Y. (2023). {``La santé mentale, son
+importance et sa mesure chez les étudiants dans les enquêtes de l'OVE
+depuis 2016.''} In \emph{Être étudiant avant et pendant la pandémie} (La
+Documentation Française).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-facon-barillot_quels_2023}{}}%
+\CSLLeftMargin{2. }%
+\CSLRightInline{Facon-Barillot, Q., Romo, L., Vansimaeys, C., Chevance,
+A., Frajerman, A., \& Morvan, Y. (2023). {``Quels déterminants de la
+santé mentale des étudiants dans l'enquête condition de vie 2020.''} In
+\emph{Être étudiant avant et pendant la pandémie} (La Documentation
+Française).}
+
+\leavevmode\vadjust pre{\hypertarget{ref-facon-barillot_recours_2023}{}}%
+\CSLLeftMargin{3. }%
+\CSLRightInline{Facon-Barillot, Q., Romo, L., Vansimaeys, C., Chevance,
+A., Frajerman, A., \& Morvan, Y. (2023). {``Le recours aux soins des
+étudiants : Quelques indicateurs à partir des enquêtes de l'OVE depuis
+2016.''} In \emph{Être étudiant avant et pendant la pandémie} (La
+Documentation Française).}
+
+\end{CSLReferences}
+
+\hypertarget{internships}{%
+\section{Internships}\label{internships}}
+
+\begin{cventries}
+    \cventry{CSAPA APS Contact}{Addiction center}{September 2020 → July 2021}{Provins}{\begin{cvitems}
+\item Individual and joint patient care
+\end{cvitems}}
+    \cventry{Résidence de l'empereur}{Medical center for the elderly}{January 2020 → June 2020}{Garches}{\begin{cvitems}
+\item Individual patient care, management of memory working groups, psychological assessments
+\end{cvitems}}
+    \cventry{La lendemaine}{Medical residence}{May 2019 → April 2019}{Les Molières}{\begin{cvitems}
+\item Third year internship within a medical residence for autistic adults
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{congress}{%
+\section{Congress}\label{congress}}
+
+\hypertarget{oral-communications}{%
+\subsection{Oral communications}\label{oral-communications}}
+
+\begin{cventries}
+    \cventry{Mental health and seeking care : evolution since 2016}{Encéphale 2023}{Paris, France}{January}{}\vspace{-4.0mm}
+    \cventry{Identification of intervention targets for student's mental health in 2021}{Clipsyd Seminar 2023}{Nanterre, France}{January}{}\vspace{-4.0mm}
+    \cventry{Identification of intervention targets for student's mental health in 2021}{AFTCC 2022}{Paris, France}{December}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{poster-sessions}{%
+\subsection{Poster sessions}\label{poster-sessions}}
+
+\begin{cventries}
+    \cventry{Caution is advised with prevalence comparisons: The case of psychological distress with students and COVID in France, a network approach}{ICPS 2023}{Brussels, Belgium}{March}{}\vspace{-4.0mm}
+    \cventry{Student's mental health : from latent measure to network modeling}{Encéphale 2023}{Paris, France}{January}{}\vspace{-4.0mm}
+    \cventry{Network modeling of student's psychological distress in 2016, 2020 and 2021}{Grepaco 2022}{Lausanne, Switzerland}{May}{}\vspace{-4.0mm}
+\end{cventries}
+
+\pagebreak
+
+\hypertarget{administrative-duties}{%
+\section{Administrative duties}\label{administrative-duties}}
+
+\begin{cventries}
+    \cventry{École doctorale 139}{Substitute for doctoral student representatives}{Current}{Nanterre}{}\vspace{-4.0mm}
+    \cventry{Clipsyd laboratory}{Statutory representative of the doctoral students in the Evaclipsy team}{Current}{Nanterre}{}\vspace{-4.0mm}
+    \cventry{EPNR Platform}{Statutory representative of the doctoral students' room}{Current}{Nanterre}{}\vspace{-4.0mm}
+\end{cventries}
+
+\hypertarget{volunteering}{%
+\section{Volunteering}\label{volunteering}}
+
+\begin{cventries}
+    \cventry{Clinical activity}{Fondation Santé des Étudiants de France}{Paris}{Current}{\begin{cvitems}
+\item Individual psychotherapy for students
+\end{cvitems}}
+    \cventry{Psychotherapeutic consultation}{Croix-Rouge Française}{Remote interview}{2022}{\begin{cvitems}
+\item Individual psychotherapy of students in nursing schools
+\end{cvitems}}
+\end{cventries}
+
+\hypertarget{skills}{%
+\section{Skills}\label{skills}}
+
+\begin{cventries}
+    \cventry{Research}{}{}{}{\begin{cvitems}
+\item R and Rstudio
+\item Git and Github
+\item Iramuteq and textual analysis
+\item Network analysis
+\item Structural equation modeling
+\item Logistic regression
+\item Meta-analysis and systematic reviews
+\item Ecological momentary assessment
+\item C1 in english
+\end{cvitems}}
+    \cventry{Clinical pratice}{}{}{}{\begin{cvitems}
+\item Cognitive behavioral therapy
+\item Acceptance and commitment therapy
+\item Psychological assessment 
+\item Motivationnal interview
+\item Psychological support
+\end{cvitems}}
+\end{cventries}
+
+
+
+\end{document}
