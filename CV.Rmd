@@ -122,7 +122,7 @@ formation %>%
 bibliography_entries("./Publications.bib")
 ```
 
-## Communication orales
+## Communications orales
 
 ```{r oral_com}
 
@@ -150,7 +150,7 @@ conf %>%
 
 ```
 
-# Adhésion et allocations
+# Adhésions et allocations
 
 ```{r membership}
 
