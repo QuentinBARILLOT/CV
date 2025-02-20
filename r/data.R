@@ -75,7 +75,7 @@ membership <- tribble(
 
 adm <- tribble(
     ~title, ~precision, ~year, ~where,
-    "École doctorale 139", "Suppléant des représentants des doctorants", "Actuel", "Nanterre",
+    "École doctorale 139", "Suppléant des représentants des doctorants", "2022-2024", "Nanterre",
     "Laboratoire Clipsyd", "Titulaire représentant des doctorants de l'équipe Evaclipsy", "2022-2024", "Nanterre",
     "Plateforme EPNR", "Titulaire représentant de la salle des doctorants", "Actuel", "Nanterre"
 )
