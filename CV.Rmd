@@ -10,7 +10,7 @@ linkedin: quentin-barillot
 orcid: 0000-0002-9469-3623
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: '0a51cd'
-aboutme: "Psychologue clinicien et psychothérapeute, je travaille depuis plus de deux ans sur mon doctorat en psychologie clinique sur la santé mentale des étudiants sous la direction de Lucia Romo et de Yannick Morvan."
+aboutme: "Psychologue clinicien et psychothérapeute, je suis en doctorat de psychologie clinique et mes travaux portent sur la santé mentale des étudiants."
 docname: CV
 output: vitae::awesomecv
 ---
@@ -36,6 +36,22 @@ source(file = "./r/data.R", encoding = "UTF-8")
 ```
 
 # Expériences professionnelles
+
+## Enseignement et recherche
+
+```{r ens_rech}
+
+exp_ens_rech %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = where,
+    where = glue::glue("{startMonth} {startYear} → {endMonth} {endYear}",.na = "")
+  )
+    
+
+```
 
 ## Clinique
 
@@ -82,7 +98,6 @@ ens %>%
 
 ```
 
-\newpage
 # Cursus universitaire
 
 ```{r cursus}
@@ -100,9 +115,26 @@ cursus %>%
 
 # Formations
 
-```{r EDUCATION1}
+## Recherche
 
-formation %>%
+```{r formations_rec}
+
+formation_rec %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = where,
+    where = glue::glue("{startYear} → {endYear}",.na = "")
+  )
+
+```
+
+## Clinique
+
+```{r formations_cli}
+
+formation_cli %>%
   detailed_entries(
     with = inst,
     what = degree,
@@ -137,7 +169,6 @@ bibliography_entries("./Posters.bib")
 
 ```
 
-\newpage
 # Congrés
 
 ```{r}
@@ -176,7 +207,7 @@ adm %>%
   )
 
 ```
-
+\newpage 
 # Compétences
 
 ```{r COMPETENCES}
